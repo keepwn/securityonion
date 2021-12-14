@@ -565,7 +565,7 @@ if [[ $is_node && ! $is_eval ]]; then
 	fi
 fi
 
-if [ "$install_type" == 'FLEET' || "$install_type" == 'FLEETKUBE' ]; then
+if [[ "$install_type" == 'FLEET' || "$install_type" == 'FLEETKUBE' ]]; then
 	collect_fleetuser_inputs
 	collect_fleet_custom_hostname_inputs
 else
