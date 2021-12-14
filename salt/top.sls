@@ -447,6 +447,22 @@ base:
     - schedule
     - docker_clean
 
+  '*_fleetkube and G@saltversion:{{saltversion}}':
+    - match: compound
+    - ca
+    - ssl
+    - sensoroni
+    - nginx
+    - telegraf
+    - firewall
+    - mysql
+    - redis
+    - fleetkube
+    - fleet.install_package
+    - filebeat
+    - schedule
+    - docker_clean
+
   '*_import and G@saltversion:{{saltversion}}':
     - match: compound
     - salt.master
